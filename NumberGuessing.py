@@ -12,8 +12,7 @@ guess_count = 0
 
 while True:
     try:
-        user_input = input("Your guess: ")
-        guess = int(user_input)
+        guess = int(input("Enter your guess: "))
         guess_count += 1
 
         # Guess ki comparison
@@ -27,4 +26,5 @@ while True:
             break
 
     except ValueError:
-        print("Invalid input! Please enter a whole number.\n")
+        print("❌ Invalid input! Please enter a number.\n")
+        continue
