@@ -15,6 +15,10 @@ while True:
         guess = int(input("Enter your guess: "))
         guess_count += 1
 
+        # 10 attempts warning
+        if guess_count == 10:
+            print("⚠️ You've made 10 attempts!")
+
         # Guess ki comparison
         if guess < secret_number:
             print("Hint: Your guess is smaller than the number\n")
