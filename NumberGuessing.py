@@ -27,4 +27,4 @@ while True:
             break
 
     except ValueError:
-        print("Invalid input! Please enter a whole number.\n")
+        print("❌ Invalid input! Please enter a whole number.\n")
